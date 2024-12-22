@@ -1,0 +1,231 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #eeeef6eb;
+    --color-de-fondo-menu: aquamarine;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 5%;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 2.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* -- Menú -- */
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-self:stretch;
+    padding-right: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.prueva__vector{
+    height: 150 px; left: 4rem;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+/* -- Presentación -- */
+
+.presentacion{
+    display:flex;
+    flex-direction: row-reverse;
+    align-self: stretch;
+}
+
+.presentacion__foto{
+    padding:20px 0px 0px 50px;
+}
+
+.presentacion__titulo{
+    padding:0px 0px 0px 50px;
+    font-size:larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.presentacion__subtitulo{
+    padding:0px 10px 0px 50px;
+    font-size:larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.redes{
+    display:flex;
+    flex-direction:row; 
+    justify-content:space-between;
+    padding-left: 0;
+    padding-right: 30rem;
+    font-weight: bolder;
+    padding:30px 00px 0px 50px;
+}
+
+/* -- Sobre mí -- */
+
+.sobre-mi{
+    background-color:aquamarine;
+    text-align: center;
+}
+/* -- Habilidades -- */
+
+.habilidades__lista{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    text-align: center;
+    padding-right: 20rem;
+    padding: 20px 80px 0px 50px;
+}
+
+/* -- Aficiones -- */
+.aficiones__lista{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 80px 0px 50px;
+}
+
+/* -- Formación académica-- */
+.formacion__lista{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding-left: 0;
+    text-align: center;
+    padding: 0px 0px 0px 50px;
+}
+
+/* -- Proyecto -- */
+.proyectos__contenedor{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding-left: 0;
+    text-align: center;
+    padding: 0px 0px 0px 50px;
+}
+
+/* -- Proyectos -- */
+.proyectos__contenedor{
+    background-color:var(--color-de-fondo);
+    padding: 0px 0px 0px 50px;
+}
+
+.proyectos__contenedor1{
+    background-color:var(--color-de-fondo);
+    padding: 0px 0px 0px 50px;
+}
+
+.logo__encriptador{
+    width: 80%;
+}
+
+.logo__encriptador1{
+    width: 100%;
+}
+
+.proyectos__nombre1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    font-style: bold;
+    font-weight: 1800;
+}
+
+.footer {
+  position:static;
+  left: 0;
+  bottom: 0;
+  top: 10;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+/* -- Contacto -- */
+.contacto{
+    text-align: center;
+    padding: 30px 30px 0px 50px;
+}
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
